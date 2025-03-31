@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eaf2f8;
+    color: #333;
+}
+
+header {
+    background: #2c3e50;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .logo img {
+    height: 100px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6f61;
+}
+
+/* Hero Section */
+/* 🌍 Default: Desktop First Approach */
+.hero-banner {
+    padding: 100px 20px;
+    font-size: 3rem;
+}
+
+/* 📱 Tablets (Portrait) */
+@media (max-width: 1024px) {
+    .hero-banner {
+        padding: 80px 15px;
+    }
+    .hero-banner h1 {
+        font-size: 2.5rem;
+    }
+    .hero-banner p {
+        font-size: 1.2rem;
+    }
+}
+
+/* 📱 Mobile (Portrait & Small Screens) */
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 50px 10px;
+    }
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+    .hero-banner p {
+        font-size: 1rem;
+    }
+}
+
+/* 📱 Extra Small Mobile (e.g., old phones) */
+@media (max-width: 480px) {
+    .hero-banner {
+        padding: 40px 8px;
+    }
+    .hero-banner h1 {
+        font-size: 1.8rem;
+    }
+    .hero-banner p {
+        font-size: 0.9rem;
+    }
+}
+
+.cta-button {
+    background: #ff6f61;
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ff3b3b;
+}
+
+/* About & Services */
+#about, #services {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#services .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 250px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background: #2980b9;
+}
+
+/* Contact Form */
+form {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #27ae60;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1e8449;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+}
